@@ -1,14 +1,20 @@
 package com.firstapp.robinpc.tongue_twisters;
 
+import android.os.Build;
 import android.os.Bundle;
+import android.speech.tts.TextToSpeech;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.text.TextUtils;
+import android.util.Log;
 import android.view.View;
 
-public class LEVEL7 extends AppCompatActivity {
+public class LEVEL7 extends AppCompatActivity implements TextToSpeech.OnInitListener{
+
+    private TextToSpeech tts;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,126 +31,174 @@ public class LEVEL7 extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
+        tts = new TextToSpeech(this, this);
+        autoSpeak("Tongue Twisters");
     }
 
     // DIALOG FOR TT NUMBER 1
     public void TT1(View view)
     {
         AlertDialog.Builder oneonealert=new AlertDialog.Builder(this);
-        oneonealert.setMessage("1.\tDouble bubble gum, bubbles double.")
+        oneonealert.setMessage(R.string.sevenone)
                 .setTitle("Level 7 TT 1").setIcon(R.drawable.dialog).create();
         oneonealert.show();
+        autoSpeak(getResources().getString(R.string.sevenone));
     }
     // DIALOG FOR TT NUMBER 2
     public void TT2(View view)
     {
         AlertDialog.Builder oneonealert=new AlertDialog.Builder(this);
-        oneonealert.setMessage("2.\tSuzie Seaword’s fish-sauce shop sells unsifted thistles for thistle-sifters to sift.")
+        oneonealert.setMessage(R.string.seventwo)
                 .setTitle("Level 7 TT 2").setIcon(R.drawable.dialog).create();
         oneonealert.show();
+        autoSpeak(getResources().getString(R.string.seventwo));
     }
     // DIALOG FOR TT NUMBER 3
     public void TT3(View view)
     {
         AlertDialog.Builder oneonealert=new AlertDialog.Builder(this);
-        oneonealert.setMessage("3.\tShe stood on the balcony, inexplicably mimicking him hiccupping, and amicably welcoming him in.")
+        oneonealert.setMessage(R.string.seventhree)
                 .setTitle("Level 7 TT 3").setIcon(R.drawable.dialog).create();
         oneonealert.show();
+        autoSpeak(getResources().getString(R.string.seventhree));
     }
     // DIALOG FOR TT NUMBER 4
     public void TT4(View view)
     {
         AlertDialog.Builder oneonealert=new AlertDialog.Builder(this);
-        oneonealert.setMessage("4.\tI am not the fig plucker, not the fig plucker’s son, but I’ll pluck figs till the fig plucker comes.")
+        oneonealert.setMessage(R.string.sevenfour)
                 .setTitle("Level 7 TT 4").setIcon(R.drawable.dialog).create();
         oneonealert.show();
+        autoSpeak(getResources().getString(R.string.sevenfour));
     }
     // DIALOG FOR TT NUMBER 5
     public void TT5(View view)
     {
         AlertDialog.Builder oneonealert=new AlertDialog.Builder(this);
-        oneonealert.setMessage("5.\tI slit a sheet, a sheet I slit, upon a slitted sheet I sit.")
+        oneonealert.setMessage(R.string.sevenfive)
                 .setTitle("Level 7 TT 5").setIcon(R.drawable.dialog).create();
         oneonealert.show();
+        autoSpeak(getResources().getString(R.string.sevenfive));
     }
     // DIALOG FOR TT NUMBER 6
     public void TT6(View view)
     {
         AlertDialog.Builder oneonealert=new AlertDialog.Builder(this);
-        oneonealert.setMessage("6.\tFresh Fried Fish, Fish Freash Fried, Fried Fish Fresh, Fish Fried Fresh.")
+        oneonealert.setMessage(R.string.sevensix)
                 .setTitle("Level 7 TT 6").setIcon(R.drawable.dialog).create();
         oneonealert.show();
+        autoSpeak(getResources().getString(R.string.sevensix));
     }
     // DIALOG FOR TT NUMBER 7
     public void TT7(View view)
     {
         AlertDialog.Builder oneonealert=new AlertDialog.Builder(this);
-        oneonealert.setMessage("7.\tCan you imagine an imaginary menagerie manager imagining managing an imaginary menagerie.")
+        oneonealert.setMessage(R.string.sevenseven)
                 .setTitle("Level 7 TT 7").setIcon(R.drawable.dialog).create();
         oneonealert.show();
+        autoSpeak(getResources().getString(R.string.sevenseven));
     }
     // DIALOG FOR TT NUMBER 8
     public void TT8(View view)
     {
         AlertDialog.Builder oneonealert=new AlertDialog.Builder(this);
-        oneonealert.setMessage("8.\tAdmist the mists and coldest frosts, with stoutest wrists and loudest boasts, He thrusts his fists against the posts, And still insists he sees the ghosts.")
+        oneonealert.setMessage(R.string.seveneight)
                 .setTitle("Level 7 TT 8").setIcon(R.drawable.dialog).create();
         oneonealert.show();
+        autoSpeak(getResources().getString(R.string.seveneight));
     }
     // DIALOG FOR TT NUMBER 9
     public void TT9(View view)
     {
         AlertDialog.Builder oneonealert=new AlertDialog.Builder(this);
-        oneonealert.setMessage("9.\tA Tudor who tooted the flute tried to tutor two tooters to toot. Said the two to the tutor, “Is it harder to toot or to tutor two tooters to Toot?”")
+        oneonealert.setMessage(R.string.sevennine)
                 .setTitle("Level 7 TT 9").setIcon(R.drawable.dialog).create();
         oneonealert.show();
+        autoSpeak(getResources().getString(R.string.sevennine));
     }
     // DIALOG FOR TT NUMBER 10
     public void TT10(View view)
     {
         AlertDialog.Builder oneonealert=new AlertDialog.Builder(this);
-        oneonealert.setMessage("A nurse anesthetist unearthed a nest.")
+        oneonealert.setMessage(R.string.seventen)
                 .setTitle("Level 7 TT 10").setIcon(R.drawable.dialog).create();
         oneonealert.show();
+        autoSpeak(getResources().getString(R.string.seventen));
     }
     // DIALOG FOR TT NUMBER 11
     public void TT11(View view)
     {
         AlertDialog.Builder oneonealert=new AlertDialog.Builder(this);
-        oneonealert.setMessage("11.\tShe sells sea shells on the seashore. The she sells are seashells she is sure.")
+        oneonealert.setMessage(R.string.seveneleven)
                 .setTitle("Level 7 TT 11").setIcon(R.drawable.dialog).create();
         oneonealert.show();
+        autoSpeak(getResources().getString(R.string.seveneleven));
     }
     // DIALOG FOR TT NUMBER 12
     public void TT12(View view)
     {
         AlertDialog.Builder oneonealert=new AlertDialog.Builder(this);
-        oneonealert.setMessage("12.\tA noise annoys an oyster, but a noisy noise annoys an oyster more!")
+        oneonealert.setMessage(R.string.seventwelve)
                 .setTitle("Level 7 TT 12").setIcon(R.drawable.dialog).create();
         oneonealert.show();
+        autoSpeak(getResources().getString(R.string.seventwelve));
     }
     // DIALOG FOR TT NUMBER 13
     public void TT13(View view)
     {
         AlertDialog.Builder oneonealert=new AlertDialog.Builder(this);
-        oneonealert.setMessage("13.\tThe king would sing , about a ring that would go ding.")
+        oneonealert.setMessage(R.string.seventhirteen)
                 .setTitle("Level 7 TT 13").setIcon(R.drawable.dialog).create();
         oneonealert.show();
+        autoSpeak(getResources().getString(R.string.seventhirteen));
     }
     // DIALOG FOR TT NUMBER 14
     public void TT14(View view)
     {
         AlertDialog.Builder oneonealert=new AlertDialog.Builder(this);
-        oneonealert.setMessage("14.\tI wish I were what I was when I wished I were what I am.")
+        oneonealert.setMessage(R.string.sevenforteen)
                 .setTitle("Level 7 TT 14").setIcon(R.drawable.dialog).create();
         oneonealert.show();
+        autoSpeak(getResources().getString(R.string.sevenforteen));
     }
     // DIALOG FOR TT NUMBER 15
     public void TT15(View view)
     {
         AlertDialog.Builder oneonealert=new AlertDialog.Builder(this);
-        oneonealert.setMessage("15.\tTo put a pipe in byte mode, type PIPE_TYPE_BYTE.")
+        oneonealert.setMessage(R.string.sevenfifteen)
                 .setTitle("Level 7 TT 15").setIcon(R.drawable.dialog).create();
         oneonealert.show();
+        autoSpeak(getResources().getString(R.string.sevenfifteen));
+    }
+
+    private void autoSpeak(String text) {
+        if (TextUtils.isEmpty(text) || tts == null) {
+            return;
+        }
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            tts.speak(text, TextToSpeech.QUEUE_FLUSH, null, "SpeakText");
+        } else {
+            tts.speak(text, TextToSpeech.QUEUE_FLUSH, null);
+        }
+    }
+
+    @Override
+    protected void onDestroy() {
+        stopTextToSpeech();
+        super.onDestroy();
+    }
+
+    private synchronized void stopTextToSpeech() {
+        if (tts == null) return;
+        tts.stop();
+        tts.shutdown();
+        tts = null;
+    }
+    @Override
+    public void onInit(int status) {
+        if (status != TextToSpeech.SUCCESS) {
+            Log.d("InitTextToSpeech", "init text to speech failed; status: " + status);
+            tts = null;
+        }
     }
 }

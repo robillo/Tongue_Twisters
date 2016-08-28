@@ -18,14 +18,14 @@
             android:layout_height="match_parent"
             android:background="?android:selectableItemBackground">
 
-            <FrameLayout
+            <android.support.v7.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:background="@android:color/background_light"
-                android:elevation="6dp"
-                android:layout_margin="15dp"
-                android:backgroundTint="#5affffff">
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="16dp"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto">
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="60dp"
@@ -36,16 +36,16 @@
                     android:onClick="TT1"
                     android:background="?attr/selectableItemBackground"
                     android:gravity="center_vertical" />
-            </FrameLayout>
+            </android.support.v7.widget.CardView>
 
-            <FrameLayout
+            <android.support.v7.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:background="@android:color/background_light"
-                android:elevation="6dp"
-                android:layout_margin="15dp"
-                android:backgroundTint="#5affffff">
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="16dp"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto">
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="60dp"
@@ -57,16 +57,16 @@
                     android:gravity="center_vertical"
                     android:elevation="4dp"
                     android:onClick="TT2"/>
-            </FrameLayout>
+            </android.support.v7.widget.CardView>
 
-            <FrameLayout
+            <android.support.v7.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:background="@android:color/background_light"
-                android:elevation="6dp"
-                android:layout_margin="15dp"
-                android:backgroundTint="#5affffff">
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="16dp"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto">
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="60dp"
@@ -78,16 +78,16 @@
                     android:gravity="center_vertical"
                     android:elevation="4dp"
                     android:onClick="TT3"/>
-            </FrameLayout>
+            </android.support.v7.widget.CardView>
 
-            <FrameLayout
+            <android.support.v7.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:background="@android:color/background_light"
-                android:elevation="6dp"
-                android:layout_margin="15dp"
-                android:backgroundTint="#5affffff">
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="16dp"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto">
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="60dp"
@@ -99,16 +99,16 @@
                     android:gravity="center_vertical"
                     android:elevation="4dp"
                     android:onClick="TT4"/>
-            </FrameLayout>
+            </android.support.v7.widget.CardView>
 
-            <FrameLayout
+            <android.support.v7.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:background="@android:color/background_light"
-                android:elevation="6dp"
-                android:layout_margin="15dp"
-                android:backgroundTint="#5affffff">
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="16dp"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto">
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="60dp"
@@ -120,16 +120,16 @@
                     android:gravity="center_vertical"
                     android:elevation="4dp"
                     android:onClick="TT5"/>
-            </FrameLayout>
+            </android.support.v7.widget.CardView>
 
-            <FrameLayout
+            <android.support.v7.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:background="@android:color/background_light"
-                android:elevation="6dp"
-                android:layout_margin="15dp"
-                android:backgroundTint="#5affffff">
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="16dp"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto">
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="60dp"
@@ -141,16 +141,16 @@
                     android:gravity="center_vertical"
                     android:elevation="4dp"
                     android:onClick="TT6"/>
-            </FrameLayout>
+            </android.support.v7.widget.CardView>
 
-            <FrameLayout
+            <android.support.v7.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:background="@android:color/background_light"
-                android:elevation="6dp"
-                android:layout_margin="15dp"
-                android:backgroundTint="#5affffff">
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="16dp"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto">
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="60dp"
@@ -162,16 +162,16 @@
                     android:gravity="center_vertical"
                     android:elevation="4dp"
                     android:onClick="TT7"/>
-            </FrameLayout>
+            </android.support.v7.widget.CardView>
 
-            <FrameLayout
+            <android.support.v7.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:background="@android:color/background_light"
-                android:elevation="6dp"
-                android:layout_margin="15dp"
-                android:backgroundTint="#5affffff">
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="16dp"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto">
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="60dp"
@@ -183,16 +183,16 @@
                     android:gravity="center_vertical"
                     android:elevation="4dp"
                     android:onClick="TT8"/>
-            </FrameLayout>
+            </android.support.v7.widget.CardView>
 
-            <FrameLayout
+            <android.support.v7.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:background="@android:color/background_light"
-                android:elevation="6dp"
-                android:layout_margin="15dp"
-                android:backgroundTint="#5affffff">
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="16dp"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto">
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="60dp"
@@ -204,16 +204,16 @@
                     android:gravity="center_vertical"
                     android:elevation="4dp"
                     android:onClick="TT9"/>
-            </FrameLayout>
+            </android.support.v7.widget.CardView>
 
-            <FrameLayout
+            <android.support.v7.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:background="@android:color/background_light"
-                android:elevation="6dp"
-                android:layout_margin="15dp"
-                android:backgroundTint="#5affffff">
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="16dp"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto">
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="60dp"
@@ -225,16 +225,16 @@
                     android:gravity="center_vertical"
                     android:elevation="4dp"
                     android:onClick="TT10"/>
-            </FrameLayout>
+            </android.support.v7.widget.CardView>
 
-            <FrameLayout
+            <android.support.v7.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:background="@android:color/background_light"
-                android:elevation="6dp"
-                android:layout_margin="15dp"
-                android:backgroundTint="#5affffff">
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="16dp"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto">
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="60dp"
@@ -245,16 +245,16 @@
                     android:background="?attr/selectableItemBackground"
                     android:gravity="center_vertical"
                     android:onClick="TT11"/>
-            </FrameLayout>
+            </android.support.v7.widget.CardView>
 
-            <FrameLayout
+            <android.support.v7.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:background="@android:color/background_light"
-                android:elevation="6dp"
-                android:layout_margin="15dp"
-                android:backgroundTint="#5affffff">
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="16dp"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto">
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="60dp"
@@ -266,16 +266,16 @@
                     android:gravity="center_vertical"
                     android:elevation="4dp"
                     android:onClick="TT12"/>
-            </FrameLayout>
+            </android.support.v7.widget.CardView>
 
-            <FrameLayout
+            <android.support.v7.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:background="@android:color/background_light"
-                android:elevation="6dp"
-                android:layout_margin="15dp"
-                android:backgroundTint="#5affffff">
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="16dp"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto">
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="60dp"
@@ -287,16 +287,16 @@
                     android:gravity="center_vertical"
                     android:elevation="4dp"
                     android:onClick="TT13"/>
-            </FrameLayout>
+            </android.support.v7.widget.CardView>
 
-            <FrameLayout
+            <android.support.v7.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:background="@android:color/background_light"
-                android:elevation="6dp"
-                android:layout_margin="15dp"
-                android:backgroundTint="#5affffff">
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="16dp"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto">
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="60dp"
@@ -308,16 +308,16 @@
                     android:gravity="center_vertical"
                     android:elevation="4dp"
                     android:onClick="TT14"/>
-            </FrameLayout>
+            </android.support.v7.widget.CardView>
 
-            <FrameLayout
+            <android.support.v7.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:background="@android:color/background_light"
-                android:elevation="6dp"
-                android:layout_margin="15dp"
-                android:backgroundTint="#5affffff">
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="16dp"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto">
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="60dp"
@@ -329,7 +329,7 @@
                     android:gravity="center_vertical"
                     android:elevation="4dp"
                     android:onClick="TT15"/>
-            </FrameLayout>
+            </android.support.v7.widget.CardView>
 
         </LinearLayout>
     </ScrollView>

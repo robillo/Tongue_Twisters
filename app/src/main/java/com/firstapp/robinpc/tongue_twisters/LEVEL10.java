@@ -1,14 +1,20 @@
 package com.firstapp.robinpc.tongue_twisters;
 
+import android.os.Build;
 import android.os.Bundle;
+import android.speech.tts.TextToSpeech;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.text.TextUtils;
+import android.util.Log;
 import android.view.View;
 
-public class LEVEL10 extends AppCompatActivity {
+public class LEVEL10 extends AppCompatActivity implements TextToSpeech.OnInitListener{
+
+    private TextToSpeech tts;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,119 +31,135 @@ public class LEVEL10 extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
+        tts = new TextToSpeech(this, this);
+        autoSpeak("Tongue Twisters");
     }
 
     // DIALOG FOR TT NUMBER 1
     public void TT1(View view)
     {
         AlertDialog.Builder oneonealert=new AlertDialog.Builder(this);
-        oneonealert.setMessage("1.\tI saw a kitten eating chicken in the kitchen.")
+        oneonealert.setMessage(R.string.tenone)
                 .setTitle("Level 10 TT 1").setIcon(R.drawable.dialog).create();
         oneonealert.show();
+        autoSpeak(getResources().getString(R.string.tenone));
     }
     // DIALOG FOR TT NUMBER 2
     public void TT2(View view)
     {
         AlertDialog.Builder oneonealert=new AlertDialog.Builder(this);
-        oneonealert.setMessage("2.\tThe third time the three-toed tree toads tried tying their toes together, the third three-toed tree toad tied the two-toed tree toads toes to the third toads toes. Then the two tied three-toad tree toads told the third three-toed tree toad that tying their toes together thrilled them their toe tips.")
+        oneonealert.setMessage(R.string.tentwo)
                 .setTitle("Level 10 TT 2").setIcon(R.drawable.dialog).create();
         oneonealert.show();
+        autoSpeak(getResources().getString(R.string.tentwo));
     }
     // DIALOG FOR TT NUMBER 3
     public void TT3(View view)
     {
         AlertDialog.Builder oneonealert=new AlertDialog.Builder(this);
-        oneonealert.setMessage("3.\tThrifty theophilus, the theocratic thistle sifter, thrice thrust three thousand thistles through the slick thick of his softly throbbing thumb.")
+        oneonealert.setMessage(R.string.tenthree)
                 .setTitle("Level 10 TT 3").setIcon(R.drawable.dialog).create();
         oneonealert.show();
+        autoSpeak(getResources().getString(R.string.tenthree));
     }
     // DIALOG FOR TT NUMBER 4
     public void TT4(View view)
     {
         AlertDialog.Builder oneonealert=new AlertDialog.Builder(this);
-        oneonealert.setMessage("4.\tWilson Winston winced whilst he minced a squinting prince.")
+        oneonealert.setMessage(R.string.tenfour)
                 .setTitle("Level 10 TT 4").setIcon(R.drawable.dialog).create();
         oneonealert.show();
+        autoSpeak(getResources().getString(R.string.tenfour));
     }
     // DIALOG FOR TT NUMBER 5
     public void TT5(View view)
     {
         AlertDialog.Builder oneonealert=new AlertDialog.Builder(this);
-        oneonealert.setMessage("5.\tI thought the haughty professor tortoise taught onotology, but the naughty tortoise taught us tautology.")
+        oneonealert.setMessage(R.string.tenfive)
                 .setTitle("Level 10 TT 5").setIcon(R.drawable.dialog).create();
         oneonealert.show();
+        autoSpeak(getResources().getString(R.string.tenfive));
     }
     // DIALOG FOR TT NUMBER 6
     public void TT6(View view)
     {
         AlertDialog.Builder oneonealert=new AlertDialog.Builder(this);
-        oneonealert.setMessage("6.\tHe thrusts his fists against the posts, and still insists he sees the ghost.")
+        oneonealert.setMessage(R.string.tensix)
                 .setTitle("Level 10 TT 6").setIcon(R.drawable.dialog).create();
         oneonealert.show();
+        autoSpeak(getResources().getString(R.string.tensix));
     }
     // DIALOG FOR TT NUMBER 7
     public void TT7(View view)
     {
         AlertDialog.Builder oneonealert=new AlertDialog.Builder(this);
-        oneonealert.setMessage("7.\tA synonym for cinnamon is a cinnamon synonym.")
+        oneonealert.setMessage(R.string.tenseven)
                 .setTitle("Level 10 TT 7").setIcon(R.drawable.dialog).create();
         oneonealert.show();
+        autoSpeak(getResources().getString(R.string.tenseven));
     }
     // DIALOG FOR TT NUMBER 8
     public void TT8(View view)
     {
         AlertDialog.Builder oneonealert=new AlertDialog.Builder(this);
-        oneonealert.setMessage("8.\tTell a tall tale of a tall tailed dog, that told Tim it tap a tall ale and thump the top of Tim’s tomb.")
+        oneonealert.setMessage(R.string.teneight)
                 .setTitle("Level 10 TT 8").setIcon(R.drawable.dialog).create();
         oneonealert.show();
+        autoSpeak(getResources().getString(R.string.teneight));
     }
     // DIALOG FOR TT NUMBER 9
     public void TT9(View view)
     {
         AlertDialog.Builder oneonealert=new AlertDialog.Builder(this);
-        oneonealert.setMessage("9.\tSlinking, sliding, slithering slyly, Swiftly slipping through the grasses shyly, Silent but for swish and hiss Is the sinuous snake’s leglessness.")
+        oneonealert.setMessage(R.string.tennine)
                 .setTitle("Level 10 TT 9").setIcon(R.drawable.dialog).create();
         oneonealert.show();
+        autoSpeak(getResources().getString(R.string.tennine));
     }
     // DIALOG FOR TT NUMBER 10
     public void TT10(View view)
     {
         AlertDialog.Builder oneonealert=new AlertDialog.Builder(this);
-        oneonealert.setMessage("10.\tSilly Sally should shave the sheep, she should show soon so selling sheep shaved showed she shouldn’t show shaved sheep so soon.")
+        oneonealert.setMessage(R.string.tenten)
                 .setTitle("Level 10 TT 10").setIcon(R.drawable.dialog).create();
         oneonealert.show();
+        autoSpeak(getResources().getString(R.string.tenten));
     }
     // DIALOG FOR TT NUMBER 11
     public void TT11(View view)
     {
         AlertDialog.Builder oneonealert=new AlertDialog.Builder(this);
-        oneonealert.setMessage("11.\tCorythosaurus bit the gory esophagus of the dillapitated dilophasurus who lived in the sorest of forest’s with  the whacky packy-rhinosaurus and the ceratosaurus, but the most poorest and mourish panoplosaurus called Wang sang and rang chorus with the lurdusaurus and the brachiosaurus who was dying of staphylococcus-aureas.")
+        oneonealert.setMessage(R.string.teneleven)
                 .setTitle("Level 10 TT 11").setIcon(R.drawable.dialog).create();
         oneonealert.show();
+        autoSpeak(getResources().getString(R.string.teneleven));
     }
     // DIALOG FOR TT NUMBER 12
     public void TT12(View view)
     {
         AlertDialog.Builder oneonealert=new AlertDialog.Builder(this);
-        oneonealert.setMessage("12.\tYou name it, we claim it. If we can’t get it, we will send you to get it. If we can’t send you to get it, forget it. Who’s  got it, if we don’t get it?")
+        oneonealert.setMessage(R.string.tentwelve)
                 .setTitle("Level 10 TT 12").setIcon(R.drawable.dialog).create();
         oneonealert.show();
+        autoSpeak(getResources().getString(R.string.tentwelve));
     }
     // DIALOG FOR TT NUMBER 13
     public void TT13(View view)
     {
         AlertDialog.Builder oneonealert=new AlertDialog.Builder(this);
-        oneonealert.setMessage("13.\tIf your Bob doesn’t give our Bob that bob that your Bob owes our Bob, our Bob will give your Bob a bob in the eye.")
+        oneonealert.setMessage(R.string.tenthirteen)
                 .setTitle("Level 10 TT 13").setIcon(R.drawable.dialog).create();
         oneonealert.show();
+        autoSpeak(getResources().getString(R.string.tenthirteen));
     }
     // DIALOG FOR TT NUMBER 14
     public void TT14(View view)
     {
         AlertDialog.Builder oneonealert=new AlertDialog.Builder(this);
-        oneonealert.setMessage("14.\tThe sixth sick sheik’s sixth sheep’s sick.")
+        oneonealert.setMessage(R.string.tenforteen)
                 .setTitle("Level 10 TT 14").setIcon(R.drawable.dialog).create();
         oneonealert.show();
+        autoSpeak(getResources().getString(R.string.tenforteen));
     }
     // DIALOG FOR TT NUMBER 15
     public void TT15(View view)
@@ -164,5 +186,37 @@ public class LEVEL10 extends AppCompatActivity {
                 "What?\n")
                 .setTitle("Level 10 TT 15").setIcon(R.drawable.dialog).create();
         oneonealert.show();
+        autoSpeak(getResources().getString(R.string.tenfifteen));
+    }
+
+    private void autoSpeak(String text) {
+        if (TextUtils.isEmpty(text) || tts == null) {
+            return;
+        }
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            tts.speak(text, TextToSpeech.QUEUE_FLUSH, null, "SpeakText");
+        } else {
+            tts.speak(text, TextToSpeech.QUEUE_FLUSH, null);
+        }
+    }
+
+    @Override
+    protected void onDestroy() {
+        stopTextToSpeech();
+        super.onDestroy();
+    }
+
+    private synchronized void stopTextToSpeech() {
+        if (tts == null) return;
+        tts.stop();
+        tts.shutdown();
+        tts = null;
+    }
+    @Override
+    public void onInit(int status) {
+        if (status != TextToSpeech.SUCCESS) {
+            Log.d("InitTextToSpeech", "init text to speech failed; status: " + status);
+            tts = null;
+        }
     }
 }
